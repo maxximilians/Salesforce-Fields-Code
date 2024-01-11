@@ -1,0 +1,6 @@
+IF(IF(MONTH(Birthdate) * 100 + DAY(Birthdate) >= MONTH(TODAY()) * 100 + DAY(TODAY()), 
+DATE(YEAR(TODAY()), MONTH(Birthdate), DAY(Birthdate)) - TODAY(), 
+DATE(YEAR(TODAY()) + 1, MONTH(Birthdate), DAY(Birthdate)) - TODAY()) = 7, 
+TRUE, 
+FALSE 
+)
